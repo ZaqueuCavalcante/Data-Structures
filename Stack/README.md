@@ -1,6 +1,8 @@
 # **Stack**
 
-Uma pilha é um **tipo abstrato de dado** baseado no princípio de *Last In First Out* (**LIFO**). 
+Uma pilha é um **tipo abstrato de dado** baseado no princípio de *Last In First Out* (**LIFO**).
+
+[Implementação em JavaScript + P5.js](https://editor.p5js.org/ZaqueuCavalcante/sketches/YX5T-TA2a)
 
 É fundamentalmente composta por duas operações: 
 - **push** (empilhar) que adiciona um elemento no topo da pilha; 
