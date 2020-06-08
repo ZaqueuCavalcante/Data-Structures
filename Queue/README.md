@@ -2,6 +2,8 @@
 
 Uma fila é um **tipo abstrato de dado** baseado no princípio de *First In, First Out* (**FIFO**). 
 
+[Implementação em JavaScript + P5.js](https://editor.p5js.org/ZaqueuCavalcante/sketches/FTOGvZpS2)
+
 É fundamentalmente composta por duas operações: 
 - **enqueue** (enfileirar) que adiciona um elemento no final da fila; 
 - **dequeue** (desemfileirar) que remove o primeiro elemento da fila;
