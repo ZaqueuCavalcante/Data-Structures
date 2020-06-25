@@ -1,4 +1,4 @@
-# **Tree**
+# ** Tree **
 
 Uma **Árvore** é uma estrutra de dados composta por **nós** ligados hierarquicamente.
 
