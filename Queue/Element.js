@@ -26,5 +26,4 @@ class Element {
     textAlign(CENTER, CENTER);
     text(this.data, this.position.x, this.position.y);
   }
-  
 }

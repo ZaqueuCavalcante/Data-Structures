@@ -1,15 +1,17 @@
 function setup() {
   createCanvas(900, 400);
-  queue = new Queue(5);
-  console.log(queue.isEmpty());
+  queue = new Queue(6);
+  console.log("Fila vazia ?", queue.isEmpty());
   
   queue.enqueue("First");
-  queue.enqueue("2º");
+  queue.enqueue(" 2º ");
   queue.enqueue("Terceiro");
   queue.enqueue("Four");
   queue.enqueue("Larst");
+
   console.log("Size =", queue.getSize());
-  queue.enqueue("Fila cheia?");
+
+  queue.enqueue("New last");
   
   // queue.dequeue();
   // queue.dequeue();
@@ -17,8 +19,8 @@ function setup() {
   // queue.dequeue();
   // queue.dequeue();
 
-  console.log("Head =", queue.head);
-  console.log("Tail =", queue.tail);
+  console.log("Head =", queue.getHead());
+  console.log("Tail =", queue.getTail());
 }
 
 function draw() {

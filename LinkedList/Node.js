@@ -18,15 +18,13 @@ class Node {
   
   setData(data) {
     this.data = str(data);
+    this.width = textWidth(data)*3;
   }
 
   setPosition(x, y) {
-    this.position.x = x;
-    this.position.y = y;
-    this.leftSide.x = x - this.width/2;
-    this.leftSide.y = y;
-    this.rightSide.x = x + this.width/2;
-    this.rightSide.y = y;
+    this.position.set(x, y);
+    this.leftSide.set(x - this.width/2, y);
+    this.rightSide.set(x + this.width/2, y);
   }
 
   show() {

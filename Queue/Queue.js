@@ -1,5 +1,5 @@
 class Queue {
-  constructor(limit) {
+  constructor(limit = 5) {
     this.elements = [];
     this.head = 0;
     this.tail = -1;
@@ -23,9 +23,6 @@ class Queue {
       return this.elements.shift().data;
     }
   }
-  first() {
-    return this.elements[this.head];
-  }
 
   isEmpty() {
     return this.tail == -1;
@@ -35,6 +32,13 @@ class Queue {
   }
   getSize() {
     return this.elements.length;
+  }
+
+  getHead() {
+    return this.elements[this.head].data;
+  }
+  getTail() {
+    return this.elements[this.tail].data;
   }
 
   updatePositions() {

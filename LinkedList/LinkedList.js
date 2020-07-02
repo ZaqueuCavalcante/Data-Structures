@@ -6,7 +6,6 @@ class LinkedList {
   append(data) {
     if (this.head == null) {
       this.head = new Node(data);
-      this.updatePositions();
       return;
     }
     let currentNode = this.head;
@@ -15,14 +14,12 @@ class LinkedList {
     }
     let newNextNode = new Node(data);
     currentNode.linkTo(newNextNode);
-    this.updatePositions();
   }
   
   prepend(data) {
     let newHead = new Node(data);
     newHead.linkTo(this.head);
     this.head = newHead;
-    this.updatePositions();
   }
   
   popHead() {
@@ -32,7 +29,6 @@ class LinkedList {
     let oldHead = this.head;
     this.head = this.head.nextNode;
     if (this.head != null) {
-      this.updatePositions();
     }
     return oldHead;
   }
@@ -53,7 +49,6 @@ class LinkedList {
       }
       preTail.nextNode = null;
       preTail.link = null;
-      this.updatePositions();
       return tail;
     }
   }
@@ -83,6 +78,7 @@ class LinkedList {
   }
   
   show() {
+    this.updatePositions();
     let currentNode = this.head;
     while (currentNode != null) {
       currentNode.show();

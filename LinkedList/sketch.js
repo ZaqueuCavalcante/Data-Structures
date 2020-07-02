@@ -10,19 +10,13 @@ function setup() {
   linkedList.prepend("New² Head");
 
   linkedList.append("Tail");
-  
-  let contain42 = linkedList.contains(42);
-  console.log(contain42);
+
+  console.log("Contain 42 ?", linkedList.contains(42));
   // let oldHead = linkedList.popHead();
   // console.log(oldHead);
   
   // let oldTail = linkedList.popTail();
   // console.log(oldTail);
-  
-  // linkedList.popTail();
-  // linkedList.popTail();
-  // linkedList.popTail();
-
 }
 
 function draw() {

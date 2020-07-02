@@ -1,0 +1,6 @@
+class CircularlyLinkedList {
+  constructor() {
+    
+  }
+
+}

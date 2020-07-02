@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  frameRate();
+  // sframeRate(10);
   background(220);
   A.show();
   B.show();
