@@ -10,10 +10,12 @@ Utilizando nós e links para ver o grafo.
 ## Matriz de Adjacência
 Data uma, representar o grafo com nós e links.
 
-## Matriz de Incidência
+## Lista de Adjacência
+Como representar ?
+Cada vértice possui uma lista com os vértices que são adjacentes a ele.
 
 ## Métodos para Percurso e Busca
-- Em largura (breadth first search)
+- Em largura / extensão (breadth first search)
     - Consiste em percorrer o grafo, visitando todos os seus nós, partindo de um nó arbitrário.
 - Em profundidade (depth first search)
     - Consiste em escolher um nó aleatório num grafo e, em seguida, visitar um de seus nós adjacentes.  Aprofundando mais a visita, repete-se esse processo **recursivamente** ou não até atingir o último nó da ramifcação.
@@ -21,6 +23,13 @@ Data uma, representar o grafo com nós e links.
 
 ## Qual o **melhor caminho**? 
 Como sempre, depende.
+
+Problemas Eulerianos
+    - Requerem que toda **aresta** seja percorrida uma única vez
+    - Carteiro Chinês
+Problemas Hamiltonianos
+    - Requerem que todo **vértice** seja percorrido uma única vez
+    - Caixeiro Viajante
 
 ## Aplicações
 - Redes de computadores, a própria Internet

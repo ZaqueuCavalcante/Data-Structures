@@ -1,34 +1,29 @@
-let input, button, greeting;
-
 function setup() {
-  createCanvas(500, 450);
-  background(100);
-
-  input = createInput();
-  input.size(50);
-  input.position(350, 65);
-
-  button = createButton('push');
-  button.position(input.x + input.width, input.y);
-  button.mousePressed(greet);
-
-  greeting = createElement('h2', 'PILHA');
-  greeting.position(20, 5);
-  textAlign(CENTER);
-  textSize(50);
+  createCanvas(600, 420);
+  stack = new Stack();
+  console.log("Está vazia ? ", stack.isEmpty());
+  
+  stack.push("Base da Pilha");
+  stack.push("Palito");
+  stack.push("Panasonic");
+  stack.push("Duracell");
+  stack.push(" AAA ");
+  stack.push("Alcalina");
+  
+  console.log("Está cheia ? ", stack.isFull());
+  stack.push("Topo da Pilha");
+  console.log("Está cheia ? ",stack.isFull());
+  
+  console.log("Pop -> ", stack.pop());
+  console.log("Size -> ", stack.size());
+  console.log("Peek -> ", stack.peek());
+  
+  //stack.push("Novo Topo da Pilha");
+  //console.log(stack.pop());
+  //stack.push("Novo Novo Topo da Pilha");
 }
 
-function greet() {
-  const name = input.value();
-  greeting.html('hello ' + name + '!');
-  input.value('');
-
-  for (let i = 0; i < 200; i++) {
-    push();
-    fill(random(255), 255, 255);
-    translate(random(width), random(height));
-    rotate(random(2 * PI));
-    text(name, 0, 0);
-    pop();
-  }
+function draw() {
+  background(220);
+  stack.show();
 }
