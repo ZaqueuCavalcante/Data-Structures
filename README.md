@@ -5,7 +5,8 @@ Implementação e visualização das principais estruturas de dados, usando **Ja
 Sequência retirada do livro "Estruturas de Dados Usando C", do Tenenbaum.
 
 ## 0 - Por quê estudar Estruturas de Dados ?
-    - É um fundamento essencial para qualquer programador 
+- É um fundamento essencial para qualquer programador 
+
 ## 1 - Introdução às Estruturas de Dados
 - Conceitos de Estrutura Abstrata de Dados e de Implementação
 
